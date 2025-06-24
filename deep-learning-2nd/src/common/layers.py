@@ -1,4 +1,5 @@
 import numpy as np
+from common.functions import softmax, cross_entropy_error
 
 class Embedding:
     def __init__(self, W):
@@ -71,3 +72,13 @@ class Affine:
         self.grads[0][...] = dW
         self.grads[1][...] = db
         return dx
+
+class SoftmaxWithLoss:
+    def __init__(self):
+        self.params, self.greds = [], []
+        self.y = None
+        self.t = None
+    
+    def forward(self, x, t):
+        self.t = t
+        self.y = softmax()
