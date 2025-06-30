@@ -35,7 +35,7 @@ class TwoLayerNet:
         return x
     
     def forward(self, x, t):
-        score = self.predict()
+        score = self.predict(x)
         loss = self.loss_layer.forward(score, t)
         return loss
     

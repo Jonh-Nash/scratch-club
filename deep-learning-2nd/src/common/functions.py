@@ -9,6 +9,8 @@ def softmax(x):
         x = x - np.max(x)
         x = np.exp(x)
         x /= np.sum(x)
+    
+    return x
 
 def cross_entropy_error(y, t):
     if y.ndim == 1:
