@@ -1,0 +1,6 @@
+[toolchain]
+channel = "nightly-2024-01-01"
+components = ["rustfmt", "rust-src"]
+# https://doc.rust-lang.org/nightly/rustc/platform-support.html
+targets = ["x86_64-apple-darwin"]
+profile = "default"
