@@ -6,8 +6,7 @@ def sort(numbers: List[int]) -> List[int]:
         for j in range(i, len(numbers)):
             if numbers[min_num_index] > numbers[j]:
                 min_num_index = j
-        if numbers[i] > numbers[min_num_index]:
-            numbers[i], numbers[min_num_index] = numbers[min_num_index], numbers[i]
+        numbers[i], numbers[min_num_index] = numbers[min_num_index], numbers[i]
         
     return numbers
         
