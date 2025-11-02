@@ -15,7 +15,7 @@ from ch04 import GPTModel
 from ch05 import calc_loss_batch, evaluate_model, plot_losses, generate_and_print_sample
 
 
-def _tokenize_and_chunk(text: str, tokenizer: tiktoken.Encoding, context_length: int, stride: int):
+def _tokenize_and_chunk(text: str, tokenizer, context_length: int, stride: int):
     token_ids = tokenizer.encode(text, allowed_special={"<|endoftext|>"})
 
     inputs = []
@@ -35,7 +35,7 @@ def _tokenize_and_chunk(text: str, tokenizer: tiktoken.Encoding, context_length:
     return torch.stack(inputs, dim=0), torch.stack(targets, dim=0)
 
 
-def _pretokenize_corpus_if_needed(txt_root: str, out_root: str, context_length: int, stride: int):
+def _pretokenize_corpus_if_needed(txt_root: str, out_root: str, context_length: int, stride: int, tokenizer):
     # 既存の .pt があればスキップ
     existing = [
         os.path.join(path, name)
@@ -47,7 +47,6 @@ def _pretokenize_corpus_if_needed(txt_root: str, out_root: str, context_length: 
         return
 
     os.makedirs(out_root, exist_ok=True)
-    tokenizer = tiktoken.get_encoding("gpt2")
 
     txt_files = [
         os.path.join(path, name)
@@ -75,7 +74,7 @@ def _pretokenize_corpus_if_needed(txt_root: str, out_root: str, context_length: 
             "target_ids": targets,
             "context_length": context_length,
             "stride": stride,
-            "tokenizer": "gpt2",
+            "tokenizer": type(tokenizer).__name__,
         }, out_file)
         print(
             f"Saved: {out_file} | sequences={inputs.size(0) if inputs.ndim == 2 else 0} x {context_length}"
@@ -88,7 +87,7 @@ def read_text_file(file_path):
     return text_data
 
 
-def create_dataloaders(text_data, train_ratio, batch_size, max_length, stride, num_workers=0):
+def create_dataloaders(text_data, train_ratio, batch_size, max_length, stride, num_workers=0, tokenizer=None):
     split_idx = int(train_ratio * len(text_data))
     train_loader = create_dataloader_v1(
         text_data[:split_idx],
@@ -97,7 +96,8 @@ def create_dataloaders(text_data, train_ratio, batch_size, max_length, stride, n
         stride=stride,
         drop_last=True,
         shuffle=True,
-        num_workers=num_workers
+        num_workers=num_workers,
+        tokenizer=tokenizer,
     )
     val_loader = create_dataloader_v1(
         text_data[split_idx:],
@@ -106,7 +106,8 @@ def create_dataloaders(text_data, train_ratio, batch_size, max_length, stride, n
         stride=stride,
         drop_last=False,
         shuffle=False,
-        num_workers=num_workers
+        num_workers=num_workers,
+        tokenizer=tokenizer,
     )
     return train_loader, val_loader
 
@@ -185,7 +186,8 @@ def train_model_simple(model, optimizer, device, n_epochs,
                         batch_size=batch_size,
                         max_length=GPT_CONFIG_124M["context_length"],
                         stride=GPT_CONFIG_124M["context_length"],
-                        num_workers=0
+                        num_workers=0,
+                        tokenizer=tokenizer,
                     )
                 print(f"Train loader: {len(train_loader)}")
                 print(f"Val loader: {len(val_loader)}")
@@ -257,11 +259,20 @@ if __name__ == "__main__":
     parser.add_argument("--pretokenized_dir", type=str, default="",
                         help=".pt を格納したディレクトリ（--use_pretokenized と併用）")
 
+    # Tokenizer options
+    parser.add_argument("--tokenizer", type=str, default="gpt2",
+                        choices=["gpt2", "spm", "hf"],
+                        help="使用するトークナイザの種類: gpt2 | spm | hf")
+    parser.add_argument("--spm_model", type=str, default="",
+                        help="SentencePiece の .model パス（--tokenizer spm のとき必須）")
+    parser.add_argument("--hf_name", type=str, default="rinna/japanese-gpt2-medium",
+                        help="HuggingFace のトークナイザ名（--tokenizer hf のとき使用）")
+
     args = parser.parse_args()
 
     if args.debug:
         GPT_CONFIG_124M = {
-            "vocab_size": 50257,     # Vocabulary size
+            "vocab_size": 50257,     # Vocabulary size (後で上書き)
             "context_length": 256,    # Context length
             "emb_dim": 12,           # Embedding dimension
             "n_heads": 2,            # Number of attention heads
@@ -272,7 +283,7 @@ if __name__ == "__main__":
 
     else:
         GPT_CONFIG_124M = {
-            "vocab_size": 50257,     # Vocabulary size
+            "vocab_size": 50257,     # Vocabulary size (後で上書き)
             "context_length": 256,  # Context length
             "emb_dim": 768,          # Embedding dimension
             "n_heads": 12,           # Number of attention heads
@@ -281,22 +292,40 @@ if __name__ == "__main__":
             "qkv_bias": False        # Query-key-value bias
         }
 
+    # Load tokenizer
+    if args.tokenizer == "gpt2":
+        tokenizer = tiktoken.get_encoding("gpt2")
+        vocab_size = 50257
+    elif args.tokenizer == "spm":
+        from japanese_tokenizer import SentencePieceTokenizer
+        if not args.spm_model:
+            raise ValueError("--spm_model に SentencePiece の .model を指定してください")
+        tokenizer = SentencePieceTokenizer(args.spm_model)
+        vocab_size = tokenizer.vocab_size
+    else:  # hf
+        from hf_tokenizer import HuggingFaceTokenizer
+        tokenizer = HuggingFaceTokenizer(args.hf_name)
+        vocab_size = tokenizer.vocab_size
+
+    # Reflect vocab size
+    GPT_CONFIG_124M["vocab_size"] = vocab_size
+
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     torch.manual_seed(123)
     model = GPTModel(GPT_CONFIG_124M)
     model.to(device)
     optimizer = torch.optim.AdamW(model.parameters(), lr=args.lr, weight_decay=0.1)
-    tokenizer = tiktoken.get_encoding("gpt2")
 
     if args.use_pretokenized:
         # 事前トークナイズディレクトリを決定（未指定なら data_dir + "_pretok"）
         src_dir = args.pretokenized_dir or (args.data_dir.rstrip("/") + "_pretok")
-        # 必要なら自動生成
+        # 必要なら自動生成（選択トークナイザで）
         _pretokenize_corpus_if_needed(
             txt_root=args.data_dir,
             out_root=src_dir,
             context_length=GPT_CONFIG_124M["context_length"],
             stride=GPT_CONFIG_124M["context_length"],
+            tokenizer=tokenizer,
         )
         all_files = [
             os.path.join(path, name)
