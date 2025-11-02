@@ -38,6 +38,14 @@ python pretraining.py \
   --output_dir model_checkpoints
 ```
 
+## RunPod での実行
+
+各 exp 配下で以下を実行
+
+```
+nohup ./command.sh > training.log 2>&1 &
+```
+
 ## ToDo
 
 - データ準備および読み込み処理を更新し、データセットを事前にトークナイズして保存し、毎回再トークナイズする必要をなくす。

@@ -2,3 +2,5 @@ torch
 sentencepiece
 transformers
 blobfile
+tiktoken
+matplotlib
