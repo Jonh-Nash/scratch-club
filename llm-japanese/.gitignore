@@ -1,3 +1,4 @@
 *.pt
 *.txt
 *.jsonl
+model_checkpoints/

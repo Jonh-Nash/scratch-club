@@ -32,7 +32,9 @@ python pretraining.py \
   --use_pretokenized \
   --pretokenized_dir ../dataset/001_pretok \
   --n_epochs 1 \
-  --batch_size 4 \
+  --batch_size 16 \
+  --eval_freq 100 \
+  --print_sample_iter 100 \
   --output_dir model_checkpoints
 ```
 
