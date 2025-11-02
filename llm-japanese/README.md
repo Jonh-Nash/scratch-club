@@ -18,7 +18,7 @@
 python ./dataset/prepare_aozora_jsonl.py \
   --jsonl_path ./dataset/aozorabunko-dedupe-clean.jsonl \
   --output_dir ./dataset/001 \
-  --max_size_mb 1000 \
+  --max_size_mb 25 \
   --separator "<|endoftext|>"
 ```
 
@@ -29,6 +29,8 @@ python pretraining.py \
   --tokenizer hf \
   --hf_name rinna/japanese-gpt2-small \
   --data_dir ../dataset/001 \
+  --use_pretokenized \
+  --pretokenized_dir ../dataset/001_pretok \
   --n_epochs 1 \
   --batch_size 4 \
   --output_dir model_checkpoints
@@ -44,7 +46,3 @@ python pretraining.py \
 - `previous_chapter.py` 内の自作 `MultiheadAttention` クラスを、PyTorch の `nn.functional.scaled_dot_product_attention` を利用する高速な `MHAPyTorchScaledDotProduct` クラスに置き換える（効率的なマルチヘッドアテンション実装を参照）。
 - [torch.compile](https://pytorch.org/tutorials/intermediate/torch_compile_tutorial.html)（`model = torch.compile`）または [thunder](https://github.com/Lightning-AI/lightning-thunder)（`model = thunder.jit(model)`）を利用してモデルを最適化し、学習を高速化する。
 - GaLore（Gradient Low-Rank Projection）を導入して、事前学習をさらに高速化する。[GaLore Python ライブラリ](https://github.com/jiaweizzhao/GaLore) の `GaLoreAdamW` オプティマイザに置き換えるだけで実現できる。
-
-```
-
-```

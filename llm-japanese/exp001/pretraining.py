@@ -56,8 +56,10 @@ def _pretokenize_corpus_if_needed(txt_root: str, out_root: str, context_length: 
     if not txt_files:
         raise FileNotFoundError(f"No .txt files found under {txt_root}")
 
+    total_start_time = time.time()
     print(f"Pretokenizing {len(txt_files)} file(s) from {txt_root} -> {out_root} ...")
     for idx, fp in enumerate(sorted(txt_files), start=1):
+        per_file_start = time.time()
         print(f"[{idx}/{len(txt_files)}] {fp}")
         text = read_text_file(fp)
         inputs, targets = _tokenize_and_chunk(
@@ -79,6 +81,25 @@ def _pretokenize_corpus_if_needed(txt_root: str, out_root: str, context_length: 
         print(
             f"Saved: {out_file} | sequences={inputs.size(0) if inputs.ndim == 2 else 0} x {context_length}"
         )
+
+        # Timing log: elapsed per file, total, ETA
+        per_file_secs = time.time() - per_file_start
+        total_secs = time.time() - total_start_time
+        processed = idx
+        remaining = len(txt_files) - processed
+        avg_per_file = total_secs / processed if processed else 0.0
+        eta_secs = avg_per_file * remaining
+
+        pf_h, pf_m, pf_s = convert_time(per_file_secs)
+        tot_h, tot_m, tot_s = convert_time(total_secs)
+        eta_h, eta_m, eta_s = convert_time(eta_secs)
+        print(
+            f"Time: file {pf_h}h {pf_m}m {pf_s}s | total {tot_h}h {tot_m}m {tot_s}s | ETA {eta_h}h {eta_m}m {eta_s}s"
+        )
+
+    overall_secs = time.time() - total_start_time
+    oh, om, os_ = convert_time(overall_secs)
+    print(f"Pretokenization completed in {oh}h {om}m {os_}s for {len(txt_files)} file(s)")
 
 
 def read_text_file(file_path):
