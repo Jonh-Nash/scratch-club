@@ -46,6 +46,17 @@ python pretraining.py \
 nohup ./command.sh > training.log 2>&1 &
 ```
 
+## 推論
+
+```bash
+python inference.py \
+  --exp_dir exp001 \
+  --prompt "吾輩は猫である。名前は" \
+  --max_new_tokens 200 \
+  --temperature 0.8 \
+  --top_k 40
+```
+
 ## ToDo
 
 - データ準備および読み込み処理を更新し、データセットを事前にトークナイズして保存し、毎回再トークナイズする必要をなくす。
