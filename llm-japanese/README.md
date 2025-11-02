@@ -25,17 +25,6 @@ python ./dataset/prepare_aozora_jsonl.py \
 ### 3) 事前学習スクリプトの実行
 
 ```bash
-cd exp001
-python pretraining.py \
-  --data_dir ../dataset/001 \
-  --use_pretokenized \
-  --pretokenized_dir ../dataset/001_pretok \
-  --n_epochs 1 \
-  --batch_size 4 \
-  --output_dir model_checkpoints
-```
-
-```bash
 python pretraining.py \
   --tokenizer hf \
   --hf_name rinna/japanese-gpt2-small \
