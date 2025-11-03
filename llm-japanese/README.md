@@ -59,11 +59,8 @@ python inference.py \
 
 ## ToDo
 
-- データ準備および読み込み処理を更新し、データセットを事前にトークナイズして保存し、毎回再トークナイズする必要をなくす。
-- `pretraining.py` スクリプトに [付録 D: 学習ループへの改良](../../appendix-D/01_main-chapter-code/appendix-D.ipynb) の機能（コサイン減衰、線形ウォームアップ、勾配クリッピング）を追加する。
+- `pretraining.py` スクリプトに [付録 D: 学習ループへの改良] の機能（コサイン減衰、線形ウォームアップ、勾配クリッピング）を追加する。
 - 事前学習スクリプトを拡張し、オプティマイザの状態を保存できるようにする（第 5 章 \_5.4 PyTorch における重みの保存と読み込みを参照）。学習が中断された場合でも再開できるようにする。
-- Weights & Biases などの高度なロガーを導入し、損失や検証曲線をリアルタイムで可視化する。
-- 分散データ並列（DDP）を導入し、複数 GPU での学習を可能にする（付録 A の *A.9.3 複数 GPU での学習*を参照）。
-- `previous_chapter.py` 内の自作 `MultiheadAttention` クラスを、PyTorch の `nn.functional.scaled_dot_product_attention` を利用する高速な `MHAPyTorchScaledDotProduct` クラスに置き換える（効率的なマルチヘッドアテンション実装を参照）。
+- 自作 `MultiheadAttention` クラスを、PyTorch の `nn.functional.scaled_dot_product_attention` を利用する高速な `MHAPyTorchScaledDotProduct` クラスに置き換える（効率的なマルチヘッドアテンション実装を参照）。
 - [torch.compile](https://pytorch.org/tutorials/intermediate/torch_compile_tutorial.html)（`model = torch.compile`）または [thunder](https://github.com/Lightning-AI/lightning-thunder)（`model = thunder.jit(model)`）を利用してモデルを最適化し、学習を高速化する。
 - GaLore（Gradient Low-Rank Projection）を導入して、事前学習をさらに高速化する。[GaLore Python ライブラリ](https://github.com/jiaweizzhao/GaLore) の `GaLoreAdamW` オプティマイザに置き換えるだけで実現できる。
