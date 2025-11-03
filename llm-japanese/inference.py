@@ -3,6 +3,7 @@ import os
 import sys
 from pathlib import Path
 import torch
+from typing import Optional, List
 
 
 def resolve_device(device_arg: str) -> torch.device:
@@ -119,12 +120,48 @@ def main():
     model = GPTModel(cfg)
     model.to(device)
 
-    ckpt_path = Path(args.ckpt) if args.ckpt else (exp_dir / "model_checkpoints" / "model_pg_final.pth")
-    if not ckpt_path.exists():
-        raise FileNotFoundError(f"チェックポイントが見つかりません: {ckpt_path}")
+    def _try_load_state(p: Path) -> Optional[dict]:
+        try:
+            if not p.exists() or p.stat().st_size == 0:
+                return None
+            state_obj = torch.load(str(p), map_location="cpu")
+            if isinstance(state_obj, dict):
+                return state_obj
+            return None
+        except Exception:
+            return None
 
-    state = torch.load(str(ckpt_path), map_location="cpu")
-    model.load_state_dict(state)
+    # 優先: 指定 ckpt -> final -> ほかの pth を新しい順
+    candidates: List[Path] = []
+    if args.ckpt:
+        candidates.append(Path(args.ckpt))
+    final_path = exp_dir / "model_checkpoints" / "model_pg_final.pth"
+    if final_path not in candidates:
+        candidates.append(final_path)
+    # ディレクトリ内の他の .pth
+    ckpt_dir = exp_dir / "model_checkpoints"
+    if ckpt_dir.exists():
+        others = sorted(ckpt_dir.glob("*.pth"), key=lambda p: p.stat().st_mtime, reverse=True)
+        for p in others:
+            if p not in candidates:
+                candidates.append(p)
+
+    loaded_state: Optional[dict] = None
+    chosen_path: Optional[Path] = None
+    for p in candidates:
+        loaded_state = _try_load_state(p)
+        if loaded_state is not None:
+            chosen_path = p
+            break
+
+    if loaded_state is None or chosen_path is None:
+        raise FileNotFoundError(
+            f"有効なチェックポイントが見つかりませんでした。探索した候補: "
+            f"{[str(p) for p in candidates]}"
+        )
+
+    print(f"[info] Loading checkpoint: {chosen_path}")
+    model.load_state_dict(loaded_state)
     model.eval()
 
     # 生成
