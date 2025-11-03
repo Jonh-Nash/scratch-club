@@ -1,0 +1,537 @@
+nohup: ignoring input
+You are using the default legacy behaviour of the <class 'transformers.models.t5.tokenization_t5.T5Tokenizer'>. This is expected, and simply means that the `legacy` (previous) behavior will be used so nothing changes for you. If you want to use the new behaviour, set `legacy=False`. This should only be set if you understand what it means, and thoroughly read the reason why this was added as explained in https://github.com/huggingface/transformers/pull/24565
+Found 27 pretokenized files in ../dataset/001_pretok. Reusing.
+Total files: 27
+Loading pretokenized 1/27: ../dataset/001_pretok/combined_6.pt
+Train loader: 611
+Val loader: 68
+Training ...
+Ep 1 (Step 0): Train loss 9.372, Val loss 9.326
+吾輩は猫である。名前は、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、、
+Ep 1 (Step 100): Train loss 6.199, Val loss 6.463
+吾輩は猫である。名前は、その気が、そので、その点に、そのことを、その点に、その点に、その点に、その点に、そのことを、その点に、そのことを、そので、そのことを、その点に
+Ep 1 (Step 200): Train loss 5.669, Val loss 6.069
+吾輩は猫である。名前は、その「新劇」の「演劇」の「演劇」の「演劇」の「演劇」の「演劇」の「演劇」の「演劇」の「演劇」の「演劇」の「演劇」の「演劇」
+Ep 1 (Step 300): Train loss 5.358, Val loss 5.808
+吾輩は猫である。名前は、その上つてゐる。 さういふのである。 さういふのである。 さういふのである。 さういふのである。 さういふのである。 さ
+Ep 1 (Step 400): Train loss 5.338, Val loss 5.687
+吾輩は猫である。名前は、その日、その日、その日、その日、その日、その日、その日、その日、その日、その日、その日、その日、その日、その日、その日、その日、その
+Ep 1 (Step 500): Train loss 5.024, Val loss 5.547
+吾輩は猫である。名前は、その上、その上、その上、その上品物に、その上る。 * * * * * * * * * * * * * * *
+Ep 1 (Step 600): Train loss 4.889, Val loss 5.438
+吾輩は猫である。名前は、その「嗜み」を、その「言葉」を、その「言葉」を、その「言葉」を、その「言葉」は、その「言葉」を、その「言葉」は、その「言葉」は、
+Saved model_checkpoints/model_pg_610.pth
+Book processed 0h 6m 10s
+Total time elapsed 0h 6m 10s
+ETA for remaining books: 2h 40m 27s
+Loading pretokenized 2/27: ../dataset/001_pretok/combined_5.pt
+Train loader: 630
+Val loader: 71
+Training ...
+Ep 1 (Step 700): Train loss 5.126, Val loss 5.574
+吾輩は猫である。名前は、そのののののののをして、のにつて來た。 のののののののにつて來
+Ep 1 (Step 800): Train loss 5.049, Val loss 5.530
+吾輩は猫である。名前は、此処に、此処に、此処に、此処に、此処に、此を、此処に、此を、此を、此を、此は、此を、此処に、此を、
+Ep 1 (Step 900): Train loss 4.948, Val loss 5.442
+吾輩は猫である。名前は、何だか、何だか、何だか、何だか、何だか、何だか、何だか、何だか、何だか、何だか、何だか、俺は、俺は
+Ep 1 (Step 1000): Train loss 4.654, Val loss 5.383
+吾輩は猫である。名前は、此は、此処に、此は、此処に、此処に、其を、其を、其が、其を、其に、其が、其が、其が、其が、其が、其
+Ep 1 (Step 1100): Train loss 4.778, Val loss 5.321
+吾輩は猫である。名前は、 ―― ―― ―― ―― ――あ、 ――あ、 ――あ、 ――あ、 ――、 ――、 ――あ、 ――あ、 ――、 ――あ、 ――、
+Ep 1 (Step 1200): Train loss 4.466, Val loss 5.260
+吾輩は猫である。名前は、此は、此は、此は、此は、此は、此は、其に、其が、其に、其を、其によつて、其を、其を、其に、其を、其
+Saved model_checkpoints/model_pg_1240.pth
+Book processed 0h 6m 23s
+Total time elapsed 0h 12m 34s
+ETA for remaining books: 2h 37m 6s
+Loading pretokenized 3/27: ../dataset/001_pretok/combined_8.pt
+Train loader: 613
+Val loader: 69
+Training ...
+Ep 1 (Step 1300): Train loss 5.005, Val loss 5.509
+吾輩は猫である。名前は、 唯円 ×××××××××××××××××××××××××××××××××××××××××××××
+Ep 1 (Step 1400): Train loss 4.993, Val loss 5.428
+吾輩は猫である。名前は、
+Ep 1 (Step 1500): Train loss 4.702, Val loss 5.355
+吾輩は猫である。名前は、
+Ep 1 (Step 1600): Train loss 4.610, Val loss 5.329
+吾輩は猫である。名前は、 の如く、 の如く、 の如く、 の如く、 の如く、 の如く、 の如く、 の如く、
+Ep 1 (Step 1700): Train loss 4.516, Val loss 5.272
+吾輩は猫である。名前は、その娘を、その娘を、その娘を、その娘に、その娘を、その娘に、その娘を、その娘に、娘を、娘に向つて、娘を、娘に向つて
+Ep 1 (Step 1800): Train loss 4.407, Val loss 5.236
+吾輩は猫である。名前は、にするに足る氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の氣の
+Saved model_checkpoints/model_pg_1853.pth
+Book processed 0h 6m 12s
+Total time elapsed 0h 18m 46s
+ETA for remaining books: 2h 30m 14s
+Loading pretokenized 4/27: ../dataset/001_pretok/combined_9.pt
+Train loader: 618
+Val loader: 69
+Training ...
+Ep 1 (Step 1900): Train loss 4.774, Val loss 4.566
+吾輩は猫である。名前は、その代りに、そのまゝ、そのまゝ、そのまゝ、そのまゝ、といふことを、そのまゝ、といふことを、そのまゝ、といふことゝ、といふことを
+Ep 1 (Step 2000): Train loss 4.608, Val loss 4.540
+吾輩は猫である。名前は、この男に、この男を貰って、おれのところへ、おれのところへ、おれのところへ、おれのところへ、おれのところへ、おれのところへ、おれの
+Ep 1 (Step 2100): Train loss 4.423, Val loss 4.513
+吾輩は猫である。名前は、 「お母さんは、お母さんのところへお出になりました」 と、お母さんは、 「お母さんは、お母さんのところへお母さんにお母さんのところへお母
+Ep 1 (Step 2200): Train loss 4.124, Val loss 4.472
+吾輩は猫である。名前は、 「おや、おやしきは、おやしきは、おやしきは、おやしきは、おやしきは、おやしきは、おやしきは、おやしきは、おやしきは、
+Ep 1 (Step 2300): Train loss 4.117, Val loss 4.458
+吾輩は猫である。名前は、その代り、その代り、その代り、その代り、その代り、その代り、その代り、その代り、その代り、その代り、その代り、その代り、その
+Ep 1 (Step 2400): Train loss 4.077, Val loss 4.468
+吾輩は猫である。名前は、 「おや、おや、おや、おや、おや、おや、おや、おや、おや、おや、おや、おや、おや、おや、おや、おや、
+Saved model_checkpoints/model_pg_2471.pth
+Book processed 0h 6m 16s
+Total time elapsed 0h 25m 2s
+ETA for remaining books: 2h 24m 1s
+Loading pretokenized 5/27: ../dataset/001_pretok/combined_7.pt
+Train loader: 616
+Val loader: 69
+Training ...
+Ep 1 (Step 2500): Train loss 5.009, Val loss 5.604
+吾輩は猫である。名前は、その女の、その女の、女の、女の、女の、女の、女の、女の、女の、女の、女の、女の、女の、女の、女の、女の
+Ep 1 (Step 2600): Train loss 4.650, Val loss 5.460
+吾輩は猫である。名前は、何物かの物かの物か、何物かの物かの物か、何物かの物かの物か、何物かの物かの物か、何物かの物か、何物
+Ep 1 (Step 2700): Train loss 4.542, Val loss 5.406
+吾輩は猫である。名前は、その犬の吠え声である。 と、その声が、 「ああ、ああ、ああ、あ、あ、あ、あ、あ、あ、あ、あ、あ、あ、あ、あ、
+Ep 1 (Step 2800): Train loss 4.270, Val loss 5.389
+吾輩は猫である。名前は、その女のに、にをして、にをつて、につて、につて、につて、つて、つて、つ
+Ep 1 (Step 2900): Train loss 4.303, Val loss 5.323
+吾輩は猫である。名前は、この際、この際、この点、この点、この点、その材料の材料の材料に、その材料の材料の材料に、その材料の材料を、その材料に、その材料の材料に、その材料
+Ep 1 (Step 3000): Train loss 3.978, Val loss 5.301
+吾輩は猫である。名前は、このにり、り、り、り、り、り、り、り、り、り、り、り、り、り、り、
+Saved model_checkpoints/model_pg_3087.pth
+Book processed 0h 6m 16s
+Total time elapsed 0h 31m 18s
+ETA for remaining books: 2h 17m 47s
+Loading pretokenized 6/27: ../dataset/001_pretok/combined_3.pt
+Train loader: 578
+Val loader: 65
+Training ...
+Ep 1 (Step 3100): Train loss 4.211, Val loss 4.879
+吾輩は猫である。名前は、この怪物を、この怪物に、この怪物を、この怪物に、この怪物を、この怪物に、この怪物を、このアイヌに、このアイヌを、このアイヌを、このアイヌを、このアイヌに、この
+Ep 1 (Step 3200): Train loss 3.968, Val loss 4.712
+吾輩は猫である。名前は、こののののに、のののをにり、ののをにり、ののをり、ののに
+Ep 1 (Step 3300): Train loss 3.800, Val loss 4.635
+吾輩は猫である。名前は、この一種に、一種異様な、一種異様な、一種異様な、異様な、異様な、恐ろしい、異様な、異様な、異様な、異様な、
+Ep 1 (Step 3400): Train loss 3.674, Val loss 4.640
+吾輩は猫である。名前は、この老人の、あの老人の、あの老人の、あの老人の、あの老人の、あの老人の、あの老人の、あの老人の、あの老人の、あの老人の、あの老人の、あの老人の、あの
+Ep 1 (Step 3500): Train loss 3.626, Val loss 4.556
+吾輩は猫である。名前は、この犬の巣を、どうして、こんなに早く、猫の皮をはめ、猫の皮をはめ、猫の皮をはめ、猫の皮をはめ、猫の皮をはめ、皮
+Ep 1 (Step 3600): Train loss 3.573, Val loss 4.567
+吾輩は猫である。名前は、その猫の皮をかぶって、その下に、をかぶせて、をかぶっていた。 は、猫の皮をかぶっていた。猫の皮をかぶっていた。猫の皮をかぶっていた。猫の皮
+Saved model_checkpoints/model_pg_3665.pth
+Book processed 0h 5m 53s
+Total time elapsed 0h 37m 12s
+ETA for remaining books: 2h 10m 12s
+Loading pretokenized 7/27: ../dataset/001_pretok/combined_4.pt
+Train loader: 596
+Val loader: 67
+Training ...
+Ep 1 (Step 3700): Train loss 4.405, Val loss 3.864
+吾輩は猫である。名前は、この犬の巣を、犬の皮で、その皮をかぶって、その皮をかぶって、その皮をかぶって、その皮をかぶって、その皮をかぶって、その皮をかぶって、その皮
+Ep 1 (Step 3800): Train loss 4.411, Val loss 3.790
+吾輩は猫である。名前は、その蛇の皮をかぶって、その皮をかぶって、その皮をかぶって、その皮をかぶって、その皮をかぶって、その皮をかぶって、その皮をかぶって、その皮をかぶって
+Ep 1 (Step 3900): Train loss 4.132, Val loss 3.741
+吾輩は猫である。名前は、に、に、をして、をして、をして、をして、をして、をして、をして、をして、を
+Ep 1 (Step 4000): Train loss 3.833, Val loss 3.727
+吾輩は猫である。名前は、この女の児である。 かれは、この女の児を育てた。 かれは、その女の児を育てた。 かれは、その女の児を育てた。 かれは、その女の
+Ep 1 (Step 4100): Train loss 3.712, Val loss 3.710
+吾輩は猫である。名前は、そのにる。 吾輩は、そのにる。 吾輩は、そのにる。 吾がにる。 吾がにる。 吾がる
+Ep 1 (Step 4200): Train loss 3.716, Val loss 3.686
+吾輩は猫である。名前は、猫の皮である。猫の皮である。猫の皮である。猫は猫の皮である。猫は猫の皮である。猫は猫の皮である。猫は猫の皮である。猫は猫の皮である
+Saved model_checkpoints/model_pg_4261.pth
+Book processed 0h 6m 3s
+Total time elapsed 0h 43m 15s
+ETA for remaining books: 2h 3m 35s
+Loading pretokenized 8/27: ../dataset/001_pretok/combined_27.pt
+Train loader: 127
+Val loader: 15
+Training ...
+Ep 1 (Step 4300): Train loss 4.395, Val loss 5.805
+吾輩は猫である。名前は、犬である。犬は犬である。犬は犬である。犬は犬である。犬は犬である。犬は犬である。犬は犬である。犬は犬を飼って、犬を飼って、犬を捕え
+Saved model_checkpoints/model_pg_4388.pth
+Book processed 0h 1m 18s
+Total time elapsed 0h 44m 33s
+ETA for remaining books: 1h 45m 50s
+Loading pretokenized 9/27: ../dataset/001_pretok/combined_2.pt
+Train loader: 613
+Val loader: 69
+Training ...
+Ep 1 (Step 4400): Train loss 4.608, Val loss 4.577
+吾輩は猫である。名前は、その女の児の児の児の児の児の児の児の児の児の児の児の児の児の児の児の児の児の児の児の児の児の児の児の
+Ep 1 (Step 4500): Train loss 4.330, Val loss 4.393
+吾輩は猫である。名前は、そのをいて、をいて、をいて、をいて、をいて、をいて、をつて、をつて、をつて、
+Ep 1 (Step 4600): Train loss 4.200, Val loss 4.351
+吾輩は猫である。名前は、その猫の猫である。 は、その猫の猫の猫である。 は、猫の猫の猫である。 は、猫の猫の猫である。 は、猫の猫の猫
+Ep 1 (Step 4700): Train loss 3.974, Val loss 4.310
+吾輩は猫である。名前は、そのに、に、に、に、に、に、に、に、に、に、に、に、に、に、に、に、
+Ep 1 (Step 4800): Train loss 4.036, Val loss 4.276
+吾輩は猫である。名前は、その頃は、その頃は、その頃は、その頃は、その頃は、その頃は、その頃は、その頃は、その頃は、その頃は、その頃は、その頃は、その
+Ep 1 (Step 4900): Train loss 3.886, Val loss 4.247
+吾輩は猫である。名前は、犬である。 犬は犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬
+Ep 1 (Step 5000): Train loss 4.034, Val loss 4.202
+吾輩は猫である。名前は、猫の皮を剥ぎ、猫の皮を剥ぎ、をり、をり、り、り、り、り、り、り、り、り、
+Saved model_checkpoints/model_pg_5001.pth
+Book processed 0h 6m 14s
+Total time elapsed 0h 50m 48s
+ETA for remaining books: 1h 41m 37s
+Loading pretokenized 10/27: ../dataset/001_pretok/combined_20.pt
+Train loader: 614
+Val loader: 69
+Training ...
+Ep 1 (Step 5100): Train loss 4.405, Val loss 5.075
+吾輩は猫である。名前は猫である。 猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫
+Ep 1 (Step 5200): Train loss 4.200, Val loss 4.955
+吾輩は猫である。名前は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。虎は虎である。虎は虎である。虎は虎である。虎は虎である。虎は虎である。虎は
+Ep 1 (Step 5300): Train loss 3.960, Val loss 4.939
+吾輩は猫である。名前は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は
+Ep 1 (Step 5400): Train loss 4.005, Val loss 4.995
+吾輩は猫である。名前は猫の猫で、猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫
+Ep 1 (Step 5500): Train loss 4.014, Val loss 4.934
+吾輩は猫である。名前は猫の猫の猫の猫の猫の猫の猫の猫が猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫の猫が猫の猫の猫の猫の猫の
+Ep 1 (Step 5600): Train loss 3.806, Val loss 4.887
+吾輩は猫である。名前は猫の巣鴨の辺で、その辺で猫が飼ったので、猫が飼ったので、猫が飼ったので、猫が飼ったので、猫が飼ったので、猫が飼った
+Saved model_checkpoints/model_pg_5615.pth
+Book processed 0h 6m 14s
+Total time elapsed 0h 57m 3s
+ETA for remaining books: 1h 36m 59s
+Loading pretokenized 11/27: ../dataset/001_pretok/combined_26.pt
+Train loader: 592
+Val loader: 66
+Training ...
+Ep 1 (Step 5700): Train loss 4.158, Val loss 4.833
+吾輩は猫である。名前は、猫の巣である。 猫は、猫の巣を、の巣に入れた。 猫は、猫の巣を、の巣に入れた。 猫は、猫の巣を、の巣に入れた
+Ep 1 (Step 5800): Train loss 3.904, Val loss 4.736
+吾輩は猫である。名前は、その通り、その辺の山奥へ、一軒の酒屋が、一軒の酒屋へ、一軒の酒屋へ、一軒の酒屋へ、一軒の酒屋へ、一軒の酒
+Ep 1 (Step 5900): Train loss 3.936, Val loss 4.692
+吾輩は猫である。名前は、そのほかの物に、その物が、何で、何で、何で、何で、何で、何で、何で、何で、何で、何で、何で、何で、何で、
+Ep 1 (Step 6000): Train loss 3.762, Val loss 4.694
+吾輩は猫である。名前は、猫ののののに、のが、のに、のが、のに、のが、のに、のが、の
+Ep 1 (Step 6100): Train loss 3.709, Val loss 4.631
+吾輩は猫である。名前は、犬の巣に、犬の巣を飼っている。 犬は、犬の巣を飼っている。犬は、犬の巣を飼っている。犬は、犬の巣を飼っている。犬は、犬の巣
+Ep 1 (Step 6200): Train loss 3.778, Val loss 4.614
+吾輩は猫である。名前は、この猫が、猫を飼うのを、猫が、猫を飼うのを、猫が、猫を飼うのを、猫が、猫を飼うのを、猫が、猫を飼うの
+Saved model_checkpoints/model_pg_6207.pth
+Book processed 0h 6m 1s
+Total time elapsed 1h 3m 4s
+ETA for remaining books: 1h 31m 44s
+Loading pretokenized 12/27: ../dataset/001_pretok/combined_25.pt
+Train loader: 615
+Val loader: 69
+Training ...
+Ep 1 (Step 6300): Train loss 3.998, Val loss 4.140
+吾輩は猫である。名前は、そのほかの、小姓の、小姓の、小姓の、小姓の、小姓の、小姓の、小姓の、小姓の、小姓の、小姓の、小姓の、小
+Ep 1 (Step 6400): Train loss 3.980, Val loss 4.057
+吾輩は猫である。名前は、何処かで、 「おれは、おれの主人だ。おれは、おれの主人だ。おれは、おれの主人だ。おれは、おれの主人だ。おれは
+Ep 1 (Step 6500): Train loss 3.824, Val loss 4.015
+吾輩は猫である。名前は、犬の如く、犬の如く、犬の如く、犬の如く、犬の如く、犬の如く、犬の如く、犬の如く、犬の如く、犬の如く
+Ep 1 (Step 6600): Train loss 3.694, Val loss 3.978
+吾輩は猫である。名前は、その日、お蝶の身を、お蝶の身に、お蝶の身を、お蝶の身に、お蝶の身を、お蝶の身に、お蝶の身に、お蝶の身
+Ep 1 (Step 6700): Train loss 3.747, Val loss 3.959
+吾輩は猫である。名前は、その辺の者から、 「おれは、おれの用向きを、おれの耳へ、聞き届けてやろう」 と、いいつけた。 と、おは、おの耳へ、
+Ep 1 (Step 6800): Train loss 3.679, Val loss 3.945
+吾輩は猫である。名前は、お蝶の耳へ、お蝶の耳へ、お蝶の耳へ、お蝶の耳へ、お蝶の耳へ、お蝶の耳へ、お蝶の耳へ、お蝶の耳へ、お
+Saved model_checkpoints/model_pg_6822.pth
+Book processed 0h 6m 14s
+Total time elapsed 1h 9m 18s
+ETA for remaining books: 1h 26m 38s
+Loading pretokenized 13/27: ../dataset/001_pretok/combined_24.pt
+Train loader: 562
+Val loader: 63
+Training ...
+Ep 1 (Step 6900): Train loss 4.172, Val loss 5.036
+吾輩は猫である。名前は、その猫の児の児の児の児の児で、その児は、その児の児の児の児は、その児の児の児の児の児で、その児は、その児の児は
+Ep 1 (Step 7000): Train loss 4.136, Val loss 4.911
+吾輩は猫である。名前は、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その
+Ep 1 (Step 7100): Train loss 4.010, Val loss 4.869
+吾輩は猫である。名前は、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その通り、その
+Ep 1 (Step 7200): Train loss 3.810, Val loss 4.819
+吾輩は猫である。名前は、その犬の頭を、吾輩の頭に附けている。 吾輩は、その犬の頭を、吾輩の頭に冠った。 吾輩は、吾輩の頭を、吾輩の頭
+Ep 1 (Step 7300): Train loss 3.776, Val loss 4.772
+吾輩は猫である。名前は、その犬の頭を、その犬の頭を、一匹の犬の頭に載せて、その犬の頭を、一匹の犬の頭に載せて、その犬の頭を、犬の頭に載せ
+Saved model_checkpoints/model_pg_7384.pth
+Book processed 0h 5m 41s
+Total time elapsed 1h 15m 0s
+ETA for remaining books: 1h 20m 46s
+Loading pretokenized 14/27: ../dataset/001_pretok/combined_23.pt
+Train loader: 578
+Val loader: 65
+Training ...
+Ep 1 (Step 7400): Train loss 4.546, Val loss 4.289
+吾輩は猫である。名前は、その名前を知っている。 吾輩は、その名前を知っている。 吾輩は、その名前を知っている。 吾輩は、その名前を知っている。 吾輩は、その名前を知っている。 吾輩は
+Ep 1 (Step 7500): Train loss 4.060, Val loss 4.186
+吾輩は猫である。名前は、猫の皮を剥いで、をり、をり、をり、をり、をり、をり、をり、をり、を
+Ep 1 (Step 7600): Train loss 4.131, Val loss 4.146
+吾輩は猫である。名前は「」という字である。 「」という字は、「」という字である。「」という字は、「」という字である。「」という字は、「
+Ep 1 (Step 7700): Train loss 3.796, Val loss 4.122
+吾輩は猫である。名前は、この猫のののので、ののにのをして、のをくといふのである。 ugus ugus .
+Ep 1 (Step 7800): Train loss 3.939, Val loss 4.097
+吾輩は猫である。名前は、この辺で、この辺で、この辺で、この辺で、この辺で、この辺の鳥の巣を、この辺で見かけるのである。 雀は、この辺で、雀の巣を、
+Ep 1 (Step 7900): Train loss 3.660, Val loss 4.072
+吾輩は猫である。名前は、この辺で、この辺で、この辺で、この辺で、この辺で、この辺で、この辺で、この辺で、この辺で、この辺で、この辺で、この辺で、この
+Saved model_checkpoints/model_pg_7962.pth
+Book processed 0h 5m 50s
+Total time elapsed 1h 20m 51s
+ETA for remaining books: 1h 15m 4s
+Loading pretokenized 15/27: ../dataset/001_pretok/combined_22.pt
+Train loader: 597
+Val loader: 67
+Training ...
+Ep 1 (Step 8000): Train loss 4.327, Val loss 4.456
+吾輩は猫である。名前は、猫が猫を猫に買って、猫を猫に買って、猫を買って、猫を買って、猫を買って、猫を買って、猫を買って、猫を買って、猫を買
+Ep 1 (Step 8100): Train loss 4.157, Val loss 4.445
+吾輩は猫である。名前は、猫の肉を食うのに、猫の肉を食うのに、猫の肉を食うのに、猫の肉を食うのに、猫の肉を食うのに、猫の肉を
+Ep 1 (Step 8200): Train loss 3.969, Val loss 4.422
+吾輩は猫である。名前は、犬の飼犬で、犬は犬の飼犬で、犬は犬の飼犬で、犬は犬の飼犬で、犬は犬の飼犬で、犬は犬の飼犬で、犬は犬
+Ep 1 (Step 8300): Train loss 4.076, Val loss 4.389
+吾輩は猫である。名前はで、で、で、で、で、で、で、で、で、で、で、で、で、で、で、で、で
+Ep 1 (Step 8400): Train loss 3.768, Val loss 4.425
+吾輩は猫である。名前は、犬の巣で、犬の巣で、犬の巣で、犬の巣をつくり、犬の巣をつくり、犬の巣をつくり、犬の巣をつくり、犬の巣をつくり
+Ep 1 (Step 8500): Train loss 3.805, Val loss 4.383
+吾輩は猫である。名前は、犬である。 図‐365 図‐490 図‐468 図‐468 図‐468 図‐498 図‐498 図‐498 図‐498
+Saved model_checkpoints/model_pg_8559.pth
+Book processed 0h 6m 3s
+Total time elapsed 1h 26m 54s
+ETA for remaining books: 1h 9m 31s
+Loading pretokenized 16/27: ../dataset/001_pretok/combined_21.pt
+Train loader: 563
+Val loader: 63
+Training ...
+Ep 1 (Step 8600): Train loss 4.375, Val loss 4.696
+吾輩は猫である。名前は、何と云う変な、何と云う変な、何と云う変な、何と云う変な、何と云う変な、何と云う変な、何と云う変な、
+Ep 1 (Step 8700): Train loss 4.172, Val loss 4.602
+吾輩は猫である。名前は、何と云う、何と云う、何と云う、何と云う、何と云う、何と云う、何と云う、何と云う、何と云う、何と云う
+Ep 1 (Step 8800): Train loss 3.998, Val loss 4.545
+吾輩は猫である。名前は、その通りだ。 ――○―― ――○―― ――○―― ――○―― ――○―― ――○―― ――○―― ――○―― ――○―― ――○―― ――○――
+Ep 1 (Step 8900): Train loss 4.163, Val loss 4.503
+吾輩は猫である。名前は、何となく、何となく、何となく、何となく、何となく、何となく、何となく、何となく、何となく、何となく、何となく、何となく、何
+Ep 1 (Step 9000): Train loss 4.094, Val loss 4.481
+吾輩は猫である。名前は、何と云う意味か、或は、何と云う意味か、或は、或は、或は、或は、或は、或は、或は、或は、或は、或は、或は
+Ep 1 (Step 9100): Train loss 3.911, Val loss 4.467
+吾輩は猫である。名前は、何と云う意味か、或る程度まで、或る程度まで、或る程度まで、或る程度まで、或る程度まで、或る程度まで、或る程度まで、或る程度まで、或る
+Saved model_checkpoints/model_pg_9122.pth
+Book processed 0h 5m 43s
+Total time elapsed 1h 32m 37s
+ETA for remaining books: 1h 3m 40s
+Loading pretokenized 17/27: ../dataset/001_pretok/combined_17.pt
+Train loader: 646
+Val loader: 72
+Training ...
+Ep 1 (Step 9200): Train loss 3.396, Val loss 4.300
+吾輩は猫である。名前は、猫の子のように、猫の子のように、猫の子のように、猫の子のように、猫の子のように、猫の子のように、猫の子のように、猫の子のように、猫の子のように、猫の子のように、猫の子のように、猫の子のように、猫
+Ep 1 (Step 9300): Train loss 3.386, Val loss 4.317
+吾輩は猫である。名前は、何となく、ましいところがあります。 「おや、おや、おや、おや、おや、おや、おや、おや、おや、おや、おや、おや、おや
+Ep 1 (Step 9400): Train loss 3.230, Val loss 4.274
+吾輩は猫である。名前は、何となく、その上、おもかげが、おもかげが、おもかげが、おもかげが、おもかげをながめているのである。 平次は、おもかげに、お
+Ep 1 (Step 9500): Train loss 3.107, Val loss 4.271
+吾輩は猫である。名前は、お勝手から、お勝手から、お勝手へ、お勝手へ、お勝手へ、お勝手へ、お勝手へ、お勝手へ、お勝手へ、お勝手へ
+Ep 1 (Step 9600): Train loss 3.134, Val loss 4.283
+吾輩は猫である。名前は、この通り、この通り、銭形平次が書いた通り、銭形平次は、銭形平次が書いた通り、銭形平次が書いた通り、銭形平次が書いた通り、銭形平次が
+Ep 1 (Step 9700): Train loss 2.880, Val loss 4.237
+吾輩は猫である。名前は、分、分、分、分、分、分、分、分、分、分、分、分、分、分、分、分、
+Saved model_checkpoints/model_pg_9768.pth
+Book processed 0h 6m 32s
+Total time elapsed 1h 39m 10s
+ETA for remaining books: 0h 58m 20s
+Loading pretokenized 18/27: ../dataset/001_pretok/combined_16.pt
+Train loader: 593
+Val loader: 66
+Training ...
+Ep 1 (Step 9800): Train loss 4.338, Val loss 4.836
+吾輩は猫である。名前は、この女である。 吾輩は、この女である。 吾輩は、この女である。 吾輩は、この女である。 吾輩は、この女である。 吾輩は、この女である。
+Ep 1 (Step 9900): Train loss 4.119, Val loss 4.737
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Ep 1 (Step 10000): Train loss 3.902, Val loss 4.726
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Ep 1 (Step 10100): Train loss 3.782, Val loss 4.726
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Ep 1 (Step 10200): Train loss 3.720, Val loss 4.723
+吾輩は猫である。名前は知らぬが、猫である。吾輩は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Ep 1 (Step 10300): Train loss 3.662, Val loss 4.734
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Saved model_checkpoints/model_pg_10361.pth
+Book processed 0h 6m 1s
+Total time elapsed 1h 45m 11s
+ETA for remaining books: 0h 52m 35s
+Loading pretokenized 19/27: ../dataset/001_pretok/combined_14.pt
+Train loader: 552
+Val loader: 62
+Training ...
+Ep 1 (Step 10400): Train loss 4.196, Val loss 4.136
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Ep 1 (Step 10500): Train loss 3.846, Val loss 4.041
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Ep 1 (Step 10600): Train loss 3.543, Val loss 4.002
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Ep 1 (Step 10700): Train loss 3.674, Val loss 3.978
+吾輩は猫である。名前は、猫の鳴き声に似て、猫の鳴き声に似て、猫の鳴き声に似て、猫の鳴き声に似て、猫の鳴き声に似て、猫の鳴き声に似て、猫の鳴き声に似て、
+Ep 1 (Step 10800): Train loss 3.538, Val loss 3.958
+吾輩は猫である。名前は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫
+Ep 1 (Step 10900): Train loss 3.365, Val loss 3.952
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Saved model_checkpoints/model_pg_10913.pth
+Book processed 0h 5m 37s
+Total time elapsed 1h 50m 48s
+ETA for remaining books: 0h 46m 39s
+Loading pretokenized 20/27: ../dataset/001_pretok/combined_18.pt
+Train loader: 595
+Val loader: 67
+Training ...
+Ep 1 (Step 11000): Train loss 4.109, Val loss 4.720
+吾輩は猫である。名前は、この猫である。 *18 *18 *18 *18 *18 *18 *18 *18 *18 *18 *18 *18 *18 *18 *18
+Ep 1 (Step 11100): Train loss 4.018, Val loss 4.665
+吾輩は猫である。名前は判らぬ。 *47
+Ep 1 (Step 11200): Train loss 3.744, Val loss 4.650
+吾輩は猫である。名前は判らぬ。 藤吉は、藤吉のほうへ向きなおって、 「おや、おや、おや、おや、おや、おや、おや、おや、おや、おや、おや
+Ep 1 (Step 11300): Train loss 3.588, Val loss 4.648
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Ep 1 (Step 11400): Train loss 3.731, Val loss 4.616
+吾輩は猫である。名前は、この犬の仔猫である。 犬の仔猫は、犬の仔猫である。犬の仔猫は、犬の仔猫である。犬の仔猫は、犬の仔猫である。犬の仔猫は
+Ep 1 (Step 11500): Train loss 3.813, Val loss 4.585
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Saved model_checkpoints/model_pg_11508.pth
+Book processed 0h 6m 1s
+Total time elapsed 1h 56m 50s
+ETA for remaining books: 0h 40m 53s
+Loading pretokenized 21/27: ../dataset/001_pretok/combined_19.pt
+Train loader: 626
+Val loader: 70
+Training ...
+Ep 1 (Step 11600): Train loss 4.243, Val loss 4.130
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Ep 1 (Step 11700): Train loss 3.950, Val loss 4.088
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Ep 1 (Step 11800): Train loss 3.836, Val loss 4.086
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Ep 1 (Step 11900): Train loss 3.650, Val loss 4.061
+吾輩は猫である。名前は、その名前は、その名前の、の、の、の、の、の、の、の、の、の、の、の、の、の、の
+Ep 1 (Step 12000): Train loss 3.531, Val loss 4.038
+吾輩は猫である。名前は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は
+Ep 1 (Step 12100): Train loss 3.412, Val loss 4.028
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Saved model_checkpoints/model_pg_12134.pth
+Book processed 0h 6m 21s
+Total time elapsed 2h 3m 11s
+ETA for remaining books: 0h 35m 11s
+Loading pretokenized 22/27: ../dataset/001_pretok/combined_13.pt
+Train loader: 562
+Val loader: 63
+Training ...
+Ep 1 (Step 12200): Train loss 4.220, Val loss 4.631
+吾輩は猫である。名前は「猫」である。 猫は「猫」である。「猫」である。「猫」は「猫」である。「猫」は「猫」である。「猫」は「猫」である。「猫」は「
+Ep 1 (Step 12300): Train loss 4.037, Val loss 4.510
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Ep 1 (Step 12400): Train loss 3.999, Val loss 4.419
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Ep 1 (Step 12500): Train loss 3.855, Val loss 4.407
+吾輩は猫である。名前は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は
+Ep 1 (Step 12600): Train loss 3.746, Val loss 4.386
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Saved model_checkpoints/model_pg_12696.pth
+Book processed 0h 5m 41s
+Total time elapsed 2h 8m 53s
+ETA for remaining books: 0h 29m 17s
+Loading pretokenized 23/27: ../dataset/001_pretok/combined_15.pt
+Train loader: 598
+Val loader: 67
+Training ...
+Ep 1 (Step 12700): Train loss 4.301, Val loss 4.658
+吾輩は猫である。名前は「猫」の「猫」の「猫」の「猫」の「猫」の「猫」の「猫」の「猫」の「猫」の「猫」の「猫」の「猫」の「猫
+Ep 1 (Step 12800): Train loss 3.980, Val loss 4.482
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Ep 1 (Step 12900): Train loss 3.646, Val loss 4.437
+吾輩は猫である。名前は、この犬である。 犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である。犬である
+Ep 1 (Step 13000): Train loss 3.590, Val loss 4.423
+吾輩は猫である。名前は「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫
+Ep 1 (Step 13100): Train loss 3.592, Val loss 4.386
+吾輩は猫である。名前は「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫
+Ep 1 (Step 13200): Train loss 3.508, Val loss 4.373
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Saved model_checkpoints/model_pg_13294.pth
+Book processed 0h 6m 3s
+Total time elapsed 2h 14m 57s
+ETA for remaining books: 0h 23m 28s
+Loading pretokenized 24/27: ../dataset/001_pretok/combined_10.pt
+Train loader: 616
+Val loader: 69
+Training ...
+Ep 1 (Step 13300): Train loss 4.290, Val loss 4.684
+吾輩は猫である。名前は、猫である。 猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、
+Ep 1 (Step 13400): Train loss 3.934, Val loss 4.689
+吾輩は猫である。名前は、猫である。 猫は、猫である。 猫は、猫は、猫の毛である。 猫は、猫の毛である。 猫は、猫の毛である。 猫は、猫の毛である。
+Ep 1 (Step 13500): Train loss 3.827, Val loss 4.657
+吾輩は猫である。名前は、猫である。 猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。
+Ep 1 (Step 13600): Train loss 3.595, Val loss 4.668
+吾輩は猫である。名前は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は
+Ep 1 (Step 13700): Train loss 3.666, Val loss 4.633
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Ep 1 (Step 13800): Train loss 3.511, Val loss 4.655
+吾輩は猫である。名前は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は
+Ep 1 (Step 13900): Train loss 3.395, Val loss 4.667
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Saved model_checkpoints/model_pg_13910.pth
+Book processed 0h 6m 15s
+Total time elapsed 2h 21m 12s
+ETA for remaining books: 0h 17m 39s
+Loading pretokenized 25/27: ../dataset/001_pretok/combined_11.pt
+Train loader: 610
+Val loader: 68
+Training ...
+Ep 1 (Step 14000): Train loss 3.851, Val loss 3.996
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Ep 1 (Step 14100): Train loss 3.972, Val loss 3.960
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Ep 1 (Step 14200): Train loss 3.981, Val loss 3.940
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Ep 1 (Step 14300): Train loss 3.628, Val loss 3.941
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Ep 1 (Step 14400): Train loss 3.640, Val loss 3.913
+吾輩は猫である。名前は「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫」と「猫
+Ep 1 (Step 14500): Train loss 3.483, Val loss 3.904
+吾輩は猫である。名前は「猫」の字である。「猫」の字は「猫」の字である。「猫」の字は「猫」の字である。「猫」の字は「猫」の字である。「猫」の字は「猫」の字である。
+Saved model_checkpoints/model_pg_14520.pth
+Book processed 0h 6m 11s
+Total time elapsed 2h 27m 23s
+ETA for remaining books: 0h 11m 47s
+Loading pretokenized 26/27: ../dataset/001_pretok/combined_1.pt
+Train loader: 632
+Val loader: 71
+Training ...
+Ep 1 (Step 14600): Train loss 3.827, Val loss 4.163
+吾輩は猫である。名前は、のののに、のに、のに、のに、のに、のに、のに、のに、のに、
+Ep 1 (Step 14700): Train loss 3.922, Val loss 4.128
+吾輩は猫である。名前は、猫である。 猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、猫である。猫は、
+Ep 1 (Step 14800): Train loss 3.643, Val loss 4.125
+吾輩は猫である。名前は猫である。 猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫は猫である。猫
+Ep 1 (Step 14900): Train loss 3.643, Val loss 4.113
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Ep 1 (Step 15000): Train loss 3.625, Val loss 4.089
+吾輩は猫である。名前は、猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫
+Ep 1 (Step 15100): Train loss 3.438, Val loss 4.103
+吾輩は猫である。名前は猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である。猫である
+Saved model_checkpoints/model_pg_15152.pth
+Book processed 0h 6m 24s
+Total time elapsed 2h 33m 48s
+ETA for remaining books: 0h 5m 54s
+Loading pretokenized 27/27: ../dataset/001_pretok/combined_12.pt
+Train loader: 621
+Val loader: 70
+Training ...
+Ep 1 (Step 15200): Train loss 3.877, Val loss 3.807
+吾輩は猫である。名前は、猫である。 猫は、猫である。 猫は、猫である。 猫は、猫である。 猫は、猫である。 猫は、猫である。 猫は、猫である。 猫は、
+Ep 1 (Step 15300): Train loss 3.618, Val loss 3.735
+吾輩は猫である。名前は、猫である。 猫は、猫である。 猫は、猫である。 猫は、猫である。 猫は、猫である。 猫は、猫である。 猫は、猫である。 猫は、
+Ep 1 (Step 15400): Train loss 3.829, Val loss 3.672
+吾輩は猫である。名前は、のののののののののののののののののののののののの
+Ep 1 (Step 15500): Train loss 3.596, Val loss 3.639
+吾輩は猫である。名前は、その、その、その、その、その、その、その、その、その、その、その、その、その、その、その、その、その、その、その、その、その、その、その、その、その
+Ep 1 (Step 15600): Train loss 3.475, Val loss 3.649
+吾輩は猫である。名前は、その猫である。 私は、その猫を、その猫を、その猫に、その猫を、その猫に、その猫を、その猫に、その猫を、その猫に、その猫を、その猫
+Ep 1 (Step 15700): Train loss 3.457, Val loss 3.632
+吾輩は猫である。名前は、この猫の名である。 私は、この猫の、可愛いのである。 私は、この猫の、可愛いのである。 私は、この猫の、可愛いのである。 私は、この猫の、可愛
+Saved model_checkpoints/model_pg_15773.pth
+Book processed 0h 6m 18s
+Total time elapsed 2h 40m 6s
+ETA for remaining books: 0h 0m 0s
+Maximum GPU memory allocated: 17.42 GB
