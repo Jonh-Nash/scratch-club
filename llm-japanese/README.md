@@ -83,8 +83,6 @@ Copyright © 2025 Kotaro Fukushima
 
 ## ToDo
 
-- `pretraining.py` スクリプトに [付録 D: 学習ループへの改良] の機能（コサイン減衰、線形ウォームアップ、勾配クリッピング）を追加する。
-- 事前学習スクリプトを拡張し、オプティマイザの状態を保存できるようにする（第 5 章 \_5.4 PyTorch における重みの保存と読み込みを参照）。学習が中断された場合でも再開できるようにする。
 - 自作 `MultiheadAttention` クラスを、PyTorch の `nn.functional.scaled_dot_product_attention` を利用する高速な `MHAPyTorchScaledDotProduct` クラスに置き換える（効率的なマルチヘッドアテンション実装を参照）。
 - [torch.compile](https://pytorch.org/tutorials/intermediate/torch_compile_tutorial.html)（`model = torch.compile`）または [thunder](https://github.com/Lightning-AI/lightning-thunder)（`model = thunder.jit(model)`）を利用してモデルを最適化し、学習を高速化する。
 - GaLore（Gradient Low-Rank Projection）を導入して、事前学習をさらに高速化する。[GaLore Python ライブラリ](https://github.com/jiaweizzhao/GaLore) の `GaLoreAdamW` オプティマイザに置き換えるだけで実現できる。
