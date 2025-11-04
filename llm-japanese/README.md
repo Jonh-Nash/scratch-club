@@ -57,6 +57,30 @@ python inference.py \
   --top_k 40
 ```
 
+## 出典とライセンス
+
+このリポジトリのコードの一部は、Sebastian Raschka 氏の著書「Build a Large Language Model From Scratch」に付属するコード（Apache License 2.0）をもとにしています。
+
+- 書籍: [Build a Large Language Model From Scratch](https://www.manning.com/books/build-a-large-language-model-from-scratch)
+- 付属コード: [github.com/rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch)
+
+本リポジトリでは、Apache License 2.0 の条件に従い再配布・改変を行っています。ライセンス全文はリポジトリ直下の `LICENSE` を参照してください。
+
+### 改変の明示
+
+- 2025-11-03: 日本語データセット向けの前処理・事前学習設定・推論スクリプトを追加/調整
+
+### 引用（Citation）
+
+本リポジトリや同梱コードを研究等で引用する場合は、原著の推奨引用に従ってください：
+
+- 書籍（推奨引用）: Raschka, Sebastian. "Build A Large Language Model (From Scratch), Manning."（出版情報等の詳細は書籍ページ参照）
+- 推奨引用メタデータ: 上流の `CITATION.cff` を参照（`https://github.com/rasbt/LLMs-from-scratch/blob/main/CITATION.cff`）
+
+### 著作権表示
+
+Copyright © 2025 Kotaro Fukushima
+
 ## ToDo
 
 - `pretraining.py` スクリプトに [付録 D: 学習ループへの改良] の機能（コサイン減衰、線形ウォームアップ、勾配クリッピング）を追加する。
